@@ -3,10 +3,17 @@ const btn = document.getElementById("25");
 const focusTime = "Focus Time";
 const shortBreak = "Short Break";
 const longBreak = "Long Break";
+const toggle = document.getElementById("toggle");
 let breakChecker = 1;
 let state = focusTime;
 let time;
 let x;
+
+toggle.addEventListener("click", function() {
+  document.querySelector(".techniqueMenu").classList.toggle("active");
+});
+
+
 
 btn.textContent = state;
 // this could probably be a loop ¯\(ツ)/¯
