@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -21,21 +27,22 @@
 
   <body>
     <div class="app">
-      <h1>Pomodoro Timer</h1>
-      <div></div>
-      <p id="timer">25:00</p>
-      <button id="25" onclick="fullTimer()">Focus Time</button>
+      <div class="text">
+        <p id="timer">25:00</p>
+
+        <button id="25" onclick="fullTimer()">Focus Time</button>
+      </div>
       <div class="techniqueMenu">
         <div class="toggle" id="toggle"><i class="fa-solid fa-bars"></i></div>
         <div class="technique">
           <h4>The Pomodoro Technique:</h4>
-          <ul>
+          <ol>
             <li>Work for 25 minutes</li>
             <li>Break for 5 minutes</li>
             <li>Repeat 2 more times</li>
             <li>Work for 25 minutes</li>
             <li>Break for 20 minutes</li>
-          </ul>
+          </ol>
         </div>
       </div>
     </div>

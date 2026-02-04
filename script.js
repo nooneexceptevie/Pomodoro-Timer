@@ -9,11 +9,9 @@ let state = focusTime;
 let time;
 let x;
 
-toggle.addEventListener("click", function() {
+toggle.addEventListener("click", function () {
   document.querySelector(".techniqueMenu").classList.toggle("active");
 });
-
-
 
 btn.textContent = state;
 // this could probably be a loop ¯\(ツ)/¯
@@ -46,7 +44,7 @@ function fullTimer() {
   function countdown() {
     if (time <= 0) {
       clearInterval(x);
-      timer.textContent = "Time's up";
+      timer.textContent = "00:00";
       btn.textContent = state;
       btn.style.visibility = "visible";
     } else {
